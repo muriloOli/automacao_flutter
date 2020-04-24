@@ -37,30 +37,6 @@ Before do |scenario|
     # permicao1 = $driver.find_element :id,'Always Allow'
     # permicao1.click
 end
-Before do |scenario|
-
-  find_and_accept = lambda do |label|
-    loop do
-      sleep 0.5
-      elements = $driver.find_elements :id, label
-      unless elements.empty?
-        elements.first.click
-        break
-      end
-    end
-  end
-  find_and_accept.call('Always Allow')
-  find_and_accept.call('Allow')
-  find_and_accept.call('OK')
-   
- end
-
-Before do |scenario|
-  sleep 1
-  $driver.find_element :id,'APROVEITE'
-  close_button = $driver.find_element :id,'close-button'
-  close_button.click
-end
 
 #------------#--------------
 After do |scenario|
