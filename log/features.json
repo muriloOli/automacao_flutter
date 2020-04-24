@@ -1,0 +1,128 @@
+[
+  {
+    "uri": "features/ios/features/pagamento.feature",
+    "id": "pagamento-produtos",
+    "keyword": "Funcionalidade",
+    "name": "Pagamento Produtos",
+    "description": "Sendo um usuário do aplicativo Pernambucanas Varejo \nQuero ter acesso a uma tela onde eu encontre os produtos que escolhi\ne possa realizar o pagamento dos mesmo",
+    "line": 3,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17500967000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4750224000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1724212000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na tela de pagamento",
+            "line": 9,
+            "match": {
+              "location": "features/ios/step_definitions/pagamento_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36805069000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pagamento-produtos;tela-de-pagamento-realizado",
+        "keyword": "Cenario",
+        "name": "Tela de pagamento realizado",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@pagamento",
+            "line": 29
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no pop-up de \"Compra realizada com sucesso!\"",
+            "line": 31,
+            "match": {
+              "location": "features/ios/step_definitions/pagamento_steps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34460782000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "toco no botao OK",
+            "line": 32,
+            "match": {
+              "location": "features/ios/step_definitions/pagamento_steps.rb:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 988030000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "sou direcionado para a tela de pagamento realizado com sucesso",
+            "line": 33,
+            "match": {
+              "location": "features/ios/step_definitions/pagamento_steps.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 864049000
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Cenario Testado"
+            ],
+            "match": {
+              "location": "features/support/env.rb:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1382406000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
