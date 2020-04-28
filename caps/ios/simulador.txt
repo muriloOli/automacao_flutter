@@ -2,8 +2,8 @@
 platformName = "iOS"
 platformVersion = "12.2"
 deviceName = "iPhone SE"
-app = '/Users/murilooliveira/Automacao/pnb_varejo_automacao/repositorio/PernambucanasVarejo.app'
+app = ''
 udid = "EB870B91-3331-42E7-8965-FA559E719155"
-bundleId = "br.com.kanamobi.Pernambucanas-Homolog"
+bundleId = ""
 xcodeOrgId = "CE2N9W8684"
 xcodeSigningId = "iPhone Developer"

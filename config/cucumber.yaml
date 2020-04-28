@@ -1,6 +1,6 @@
 # config/cucumber.yml
 ##YAML Template
-default: -p murilo -p ios -p html -p json --format pretty
+default: -p murilo -p android -p html -p json --format pretty
 
 android: PLATFORM=android --exclude features/ios
 ios: PLATFORM=ios --exclude features/android

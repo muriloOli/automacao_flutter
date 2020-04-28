@@ -2,7 +2,7 @@ require 'rspec/expectations'
 require 'appium_lib'
 require 'pry'
 require 'rubygems'
-require_relative '../ios/screens/BaseScreen.rb'
+# require_relative '../ios/screens/BaseScreen.rb'
 
 # # Quando for utilizar o Selenium Grid
 # case ENV['PLATFORM']

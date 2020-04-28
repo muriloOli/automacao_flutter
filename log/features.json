@@ -1,17 +1,23 @@
 [
   {
-    "uri": "features/ios/features/pagamento.feature",
-    "id": "pagamento-produtos",
+    "uri": "features/android/features/pesquisa.feature",
+    "id": "pesquisa-de-imoveis",
     "keyword": "Funcionalidade",
-    "name": "Pagamento Produtos",
-    "description": "Sendo um usuário do aplicativo Pernambucanas Varejo \nQuero ter acesso a uma tela onde eu encontre os produtos que escolhi\ne possa realizar o pagamento dos mesmo",
-    "line": 3,
+    "name": "Pesquisa de imoveis",
+    "description": "Eu como cliente\nQuero pesquisar imóveis que esteja à venda ou aluguel\nPara contactar o agent que desejo aludar ou comprar ",
+    "line": 4,
+    "comments": [
+      {
+        "value": "#encoding: utf-8",
+        "line": 2
+      }
+    ],
     "elements": [
       {
         "keyword": "Contexto",
-        "name": "",
+        "name": "Acessar a tela de pesquisa",
         "description": "",
-        "line": 8,
+        "line": 9,
         "type": "background",
         "before": [
           {
@@ -19,106 +25,94 @@
               "location": "features/support/env.rb:34"
             },
             "result": {
-              "status": "passed",
-              "duration": 17500967000
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/env.rb:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4750224000
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/env.rb:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1724212000
+              "status": "failed",
+              "error_message": "An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.move.realtor' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.move.realtor.splash.SplashActivity' or 'com.move.realtor.com.move.realtor.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting (Selenium::WebDriver::Error::UnknownError)\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.move.realtor' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.move.realtor.splash.SplashActivity' or 'com.move.realtor.com.move.realtor.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting\n    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)\n    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n./features/support/env.rb:35:in `Before'",
+              "duration": 42645030000
             }
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "que estou na tela de pagamento",
-            "line": 9,
+            "name": "que o usuario acesse a tela home",
+            "line": 10,
             "match": {
-              "location": "features/ios/step_definitions/pagamento_steps.rb:1"
+              "location": "features/android/features/pesquisa.feature:10"
             },
             "result": {
-              "status": "passed",
-              "duration": 36805069000
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "toque no campo de pesquisa",
+            "line": 11,
+            "match": {
+              "location": "features/android/features/pesquisa.feature:11"
+            },
+            "result": {
+              "status": "undefined"
             }
           }
         ]
       },
       {
-        "id": "pagamento-produtos;tela-de-pagamento-realizado",
+        "id": "pesquisa-de-imoveis;pesquisar-imovel",
         "keyword": "Cenario",
-        "name": "Tela de pagamento realizado",
+        "name": "Pesquisar imovel",
         "description": "",
-        "line": 30,
+        "line": 14,
         "type": "scenario",
         "tags": [
           {
-            "name": "@pagamento",
-            "line": 29
+            "name": "@doing",
+            "line": 13
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "que estou no pop-up de \"Compra realizada com sucesso!\"",
-            "line": 31,
+            "name": "que o usuario preencha o local de pesquisa",
+            "line": 15,
             "match": {
-              "location": "features/ios/step_definitions/pagamento_steps.rb:69"
+              "location": "features/android/features/pesquisa.feature:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 34460782000
+              "status": "undefined"
             }
           },
           {
             "keyword": "Quando ",
-            "name": "toco no botao OK",
-            "line": 32,
+            "name": "ele escolher o local sugerido",
+            "line": 16,
             "match": {
-              "location": "features/ios/step_definitions/pagamento_steps.rb:77"
+              "location": "features/android/features/pesquisa.feature:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 988030000
+              "status": "undefined"
             }
           },
           {
             "keyword": "Entao ",
-            "name": "sou direcionado para a tela de pagamento realizado com sucesso",
-            "line": 33,
+            "name": "o botao view list deve ser apresentado",
+            "line": 17,
             "match": {
-              "location": "features/ios/step_definitions/pagamento_steps.rb:81"
+              "location": "features/android/features/pesquisa.feature:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 864049000
+              "status": "undefined"
             }
           }
         ],
         "after": [
           {
-            "output": [
-              "Cenario Testado"
-            ],
             "match": {
-              "location": "features/support/env.rb:66"
+              "location": "features/support/env.rb:42"
             },
             "result": {
-              "status": "passed",
-              "duration": 1382406000
+              "status": "failed",
+              "error_message": "undefined method `save_screenshot' for nil:NilClass (NoMethodError)\n./features/support/env.rb:46:in `After'",
+              "duration": 201000
             }
           }
         ]
