@@ -33,3 +33,5 @@ gem 'faker'
 gem "cpf_faker"
 
 gem 'webdrivers'
+
+gem 'syntax', '~> 1.2'

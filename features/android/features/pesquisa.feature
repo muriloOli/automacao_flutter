@@ -12,7 +12,7 @@ Contexto: Acessar a tela de pesquisa
 
 @doing
 Cenario: Pesquisar imovel
-Dado que o usuario preencha o local de pesquisa
+Dado que o usuario preencha o local de pesquisa ex: "Compton"
 Quando ele escolher o local sugerido
 Entao o botao view list deve ser apresentado
 

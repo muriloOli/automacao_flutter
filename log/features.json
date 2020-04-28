@@ -22,12 +22,11 @@
         "before": [
           {
             "match": {
-              "location": "features/support/env.rb:34"
+              "location": "features/support/env.rb:38"
             },
             "result": {
-              "status": "failed",
-              "error_message": "An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.move.realtor' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.move.realtor.splash.SplashActivity' or 'com.move.realtor.com.move.realtor.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting (Selenium::WebDriver::Error::UnknownError)\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.move.realtor' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.move.realtor.splash.SplashActivity' or 'com.move.realtor.com.move.realtor.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting\n    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:826:9)\n    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:388:37)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n./features/support/env.rb:35:in `Before'",
-              "duration": 42645030000
+              "status": "passed",
+              "duration": 8636535000
             }
           }
         ],
@@ -37,10 +36,11 @@
             "name": "que o usuario acesse a tela home",
             "line": 10,
             "match": {
-              "location": "features/android/features/pesquisa.feature:10"
+              "location": "features/android/step_definitions/pesquisa_steps.rb:1"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 636594000
             }
           },
           {
@@ -48,10 +48,11 @@
             "name": "toque no campo de pesquisa",
             "line": 11,
             "match": {
-              "location": "features/android/features/pesquisa.feature:11"
+              "location": "features/android/step_definitions/pesquisa_steps.rb:5"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 462144000
             }
           }
         ]
@@ -72,13 +73,14 @@
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "que o usuario preencha o local de pesquisa",
+            "name": "que o usuario preencha o local de pesquisa ex: \"Compton\"",
             "line": 15,
             "match": {
-              "location": "features/android/features/pesquisa.feature:15"
+              "location": "features/android/step_definitions/pesquisa_steps.rb:9"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 3249295000
             }
           },
           {
@@ -86,10 +88,11 @@
             "name": "ele escolher o local sugerido",
             "line": 16,
             "match": {
-              "location": "features/android/features/pesquisa.feature:16"
+              "location": "features/android/step_definitions/pesquisa_steps.rb:14"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 1136863000
             }
           },
           {
@@ -97,22 +100,25 @@
             "name": "o botao view list deve ser apresentado",
             "line": 17,
             "match": {
-              "location": "features/android/features/pesquisa.feature:17"
+              "location": "features/android/step_definitions/pesquisa_steps.rb:18"
             },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 1199502000
             }
           }
         ],
         "after": [
           {
+            "output": [
+              "Cenario Testado"
+            ],
             "match": {
-              "location": "features/support/env.rb:42"
+              "location": "features/support/env.rb:46"
             },
             "result": {
-              "status": "failed",
-              "error_message": "undefined method `save_screenshot' for nil:NilClass (NoMethodError)\n./features/support/env.rb:46:in `After'",
-              "duration": 201000
+              "status": "passed",
+              "duration": 1200721000
             }
           }
         ]

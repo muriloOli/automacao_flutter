@@ -2,6 +2,10 @@ require 'rspec/expectations'
 require 'appium_lib'
 require 'pry'
 require 'rubygems'
+require 'cucumber'
+require 'pry-nav'
+require 'rspec'
+require 'selenium-webdriver'
 # require_relative '../ios/screens/BaseScreen.rb'
 
 # # Quando for utilizar o Selenium Grid
@@ -16,7 +20,7 @@ caps_path = File.join(File.dirname(__FILE__), '..', '..', 'caps', ENV['PLATFORM'
 caps = Appium.load_appium_txt file: caps_path, verbose: true
   
 Appium::Driver.new(caps, true) 
-#  $driver.remove_app('br.com.kanamobi.Pernambucanas-Homolog')
+# $driver.remove_app'com.move.realtor'
  #$driver.start_driver
 
  
@@ -49,4 +53,6 @@ After do |scenario|
 
     $driver.driver_quit
     puts "Cenario Testado"
+
+    # $driver.remove_app('com.move.realtor')
 end
