@@ -55,12 +55,6 @@ bundle install
 Executando o projeto
 Para executar o projeto abra o terminal na pasta do projeto e execute o comando:
 
-Para android:
 
-rake run_acceptance[android,@tag]
-Para IOS:
-
-rake run_acceptance[ios,@tag]
-Caso haja alguma duvida na instalação, recomendo a leitura desse artigo para configuração:
-
-Configurar ambiente para automação com appium
+Configurar ambiente para automação com appium:
+https://medium.com/qaninja/configurando-o-ambiente-para-executar-o-appium-788eb0002ce9
