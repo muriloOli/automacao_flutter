@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8636535000
+              "duration": 8985358000
             }
           }
         ],
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 636594000
+              "duration": 146143000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 462144000
+              "duration": 97802000
             }
           }
         ]
@@ -62,49 +62,43 @@
         "keyword": "Cenario",
         "name": "Pesquisar imovel",
         "description": "",
-        "line": 14,
+        "line": 13,
         "type": "scenario",
-        "tags": [
-          {
-            "name": "@doing",
-            "line": 13
-          }
-        ],
         "steps": [
           {
             "keyword": "Dado ",
             "name": "que o usuario preencha o local de pesquisa ex: \"Compton\"",
-            "line": 15,
+            "line": 14,
             "match": {
               "location": "features/android/step_definitions/pesquisa_steps.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 3249295000
+              "duration": 3850293000
             }
           },
           {
             "keyword": "Quando ",
             "name": "ele escolher o local sugerido",
-            "line": 16,
+            "line": 15,
             "match": {
               "location": "features/android/step_definitions/pesquisa_steps.rb:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1136863000
+              "duration": 1097987000
             }
           },
           {
             "keyword": "Entao ",
             "name": "o botao view list deve ser apresentado",
-            "line": 17,
+            "line": 16,
             "match": {
               "location": "features/android/step_definitions/pesquisa_steps.rb:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1199502000
+              "duration": 1199709000
             }
           }
         ],
@@ -118,7 +112,221 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1200721000
+              "duration": 1055133000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Acessar a tela de pesquisa",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9450315000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuario acesse a tela home",
+            "line": 10,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145879000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "toque no campo de pesquisa",
+            "line": 11,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102657000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-de-imoveis;acessar-os-detalhes-de-um-imovel",
+        "keyword": "Cenario",
+        "name": "Acessar os detalhes de um imovel",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@doing",
+            "line": 18
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuario tenha pesquisado um imovel",
+            "line": 20,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6094305000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "ele tocar no imovel disponibilizado na lista",
+            "line": 21,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5299449000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o aplicativo deve apresentar os detalhes do imovel",
+            "line": 22,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300209000
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Cenario Testado"
+            ],
+            "match": {
+              "location": "features/support/env.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2305060000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Acessar a tela de pesquisa",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10046284000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuario acesse a tela home",
+            "line": 10,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 346816000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "toque no campo de pesquisa",
+            "line": 11,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99341000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-de-imoveis;favoritar-imovel",
+        "keyword": "Cenario",
+        "name": "Favoritar imovel",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuario tenha acessado os detalhes do imovel",
+            "line": 26,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10600673000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "ele tocar no botao de Favoritar",
+            "line": 27,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2999287000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o aplicativo deve apresentar o imovel escolhido na lista de imoveis favoritados",
+            "line": 28,
+            "match": {
+              "location": "features/android/step_definitions/pesquisa_steps.rb:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9951597000
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Cenario Testado"
+            ],
+            "match": {
+              "location": "features/support/env.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1598968000
             }
           }
         ]

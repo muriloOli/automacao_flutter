@@ -17,7 +17,7 @@ class BaseScreen
         $driver.hide_keyboard
     end 
     def swipe
-        $driver.swipe start_x: 200, start_y: 220, end_x: 200, end_y: 100
+        $driver.swipe start_x: 2, start_y: 200, end_x: 1000, end_y: 200
     end
     def waitLoading(element_id)
         progress = $driver.find_element :id, element_id 
@@ -29,7 +29,7 @@ class BaseScreen
         loop do
             progress = $driver.find_elements :id, element_id
             break if progress.length > 0
-            sleep 1
+            sleep 3
           end
     end
     def waitElementXpath(element_xpath)

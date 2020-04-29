@@ -17,5 +17,13 @@ class PesquisaScreen < BaseScreen
         btn = finding_element'view_list_label'
         btn.click
     end
+    def swipe_menu
+        swipe 
+    end
+    def click_favored_menu
+        btn = finding_xpath '//*[@text="Favorite Listings"]'
+        btn.click
+    end
+
 
 end
