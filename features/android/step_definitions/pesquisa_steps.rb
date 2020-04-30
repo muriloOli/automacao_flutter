@@ -59,6 +59,6 @@ Dado("que o usuario acesse a tela home") do
     @pesquisaScreen.swipe_menu
     @pesquisaScreen.click_favored_menu
     @imovelFavoritoScreen = ImovelFavoritoScreen.new
-    @imovelFavoritoScreen.find_favored_address @favored_address
+    @imovelFavoritoScreen.find_favored_address #@favored_address
  
   end
