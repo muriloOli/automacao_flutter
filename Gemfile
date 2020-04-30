@@ -35,3 +35,5 @@ gem "cpf_faker"
 gem 'webdrivers'
 
 gem 'syntax', '~> 1.2'
+
+gem 'report_builder'

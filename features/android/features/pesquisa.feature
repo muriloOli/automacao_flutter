@@ -15,13 +15,13 @@ Dado que o usuario preencha o local de pesquisa ex: "Compton"
 Quando ele escolher o local sugerido
 Entao o botao view list deve ser apresentado
 
-@doing
+
 Cenario: Acessar os detalhes de um imovel
 Dado que o usuario tenha pesquisado um imovel
 Quando ele tocar no imovel disponibilizado na lista
 Entao o aplicativo deve apresentar os detalhes do imovel 
 
-
+@doing
 Cenario: Favoritar imovel
 Dado que o usuario tenha acessado os detalhes do imovel
 Quando ele tocar no botao de Favoritar

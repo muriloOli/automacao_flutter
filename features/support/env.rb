@@ -6,6 +6,7 @@ require 'cucumber'
 require 'pry-nav'
 require 'rspec'
 require 'selenium-webdriver'
+require 'report_builder'
 # require_relative '../ios/screens/BaseScreen.rb'
 
 # # Quando for utilizar o Selenium Grid
@@ -44,15 +45,31 @@ end
 
 #------------#--------------
 After do |scenario|
-        nome_cenario = scenario.name.tr(' ','_').downcase!
-        nome_cenario = nome_cenario.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/, '_') #substitui caracteres especiais
-        screenshot = "screenshots/#{nome_cenario}.png"
-        img = $driver.screenshot(File.join(screenshot))
-        $driver.screenshot(screenshot)
+
+        if scenario.failed?
+            unless File.directory?('./reports/screenshots')
+              FileUtils.mkdir_p('screenshots')
+            end
+        
+            time_stamp = Time.now.strftime('%Y-%m-%d.%H:%M')
+            screenshot_name = time_stamp + '.png'
+            screenshot_file = File.join('./reports/screenshots', screenshot_name)
+            $driver.screenshot(screenshot_file)
+            embed("#{screenshot_file}", 'image/png')
+          end
 
 
     $driver.driver_quit
     puts "Cenario Testado"
 
     # $driver.remove_app('com.move.realtor')
+end
+
+at_exit do
+    ReportBuilder.configure do |config|
+        config.input_path = 'reports/reports.json'
+        config.report_path = 'reports/reports'
+        config.report_title = "Tests Execution Report"
+    end
+    ReportBuilder.build_report
 end
