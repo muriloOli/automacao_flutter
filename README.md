@@ -30,12 +30,12 @@ Instalar o gerenciador de versões RVM:
 Caso o "curl" não estiver instalado, basta "brew install curl".
 Com o ruby instalado, instalar as principais gems para nosso contexto, o bundler e cucumber:
 
-gem install bundler
-gem install cucumber
-Baixando o jdk da oracle
+gem install bundler;
+gem install cucumber;
+Baixando o jdk da oracle;
 Baixar o jdk 8 para evitar problemas de conflito
 
-Download java 8 Oracle clicando nesse link
+Download java 8 Oracle clicando nesse link: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
 Instalando Android Studio
 Após instalar o jdk e configurar as variaveis de ambiente do java, temos que instalar o android studio
@@ -45,7 +45,7 @@ Download Android Studio clicando nesse link
 Instalando Appium
 Agora vamos instalar o Appium, framework que vamos utilizar para nossa automação mobile: Por questões de conflitos e problema com alguns comandos, não estamos utilizando a ultima versão.
 
-Download appium v1.13.0 clicando nesse link
+Download appium v1.15.0 clicando nesse link
 
 Vamos fazer o clone do repositório:
 
@@ -53,8 +53,8 @@ Após o clone acessar a pasta do projeto e no diretório onde tem o arquivo Gemf
 
 bundle install
 Executando o projeto
-Para executar o projeto abra o terminal na pasta do projeto e execute o comando:
+Para executar o projeto abra o terminal na pasta do projeto e execute o comando: "cucumber"
 
-
+Referencias:
 Configurar ambiente para automação com appium:
 https://medium.com/qaninja/configurando-o-ambiente-para-executar-o-appium-788eb0002ce9
