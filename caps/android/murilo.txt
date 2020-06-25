@@ -6,4 +6,11 @@ appPackage = "com.move.realtor"
 appWaitDuration = 20000
 appWaitActivity = 'com.move.realtor.onboarding.OnBoardingActivity'
 
-
+[appium_lib]
+sauce_username = ""
+sauce_access_key = ""
+sauce_endpoint = ""
+wait = 30
+wait_timeout = 20
+wait_interval = 1
+export_session = true
