@@ -5,6 +5,7 @@ default: -p murilo -p android -p html -p json --format pretty
 android: PLATFORM=android --exclude features/ios
 ios: PLATFORM=ios --exclude features/android
 murilo: QA=murilo
+testbot: QA=testbot
 
 html:  --format html --out=reports/reports.html
 json:  --format json --out=reports/reports.json

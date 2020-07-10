@@ -6,12 +6,13 @@ Dado("que o usuario acesse a tela home") do
     @homeScreen.click_input_address
   end
   
-  Dado("que o usuario preencha o local de pesquisa ex: {string}") do |bdd_address|
+  Dado("que o usuario preencha o local de pesquisa ex: {string}") do |address|
     @pesquisaScreen = PesquisaScreen.new
-    @pesquisaScreen.fill_address bdd_address
+    @pesquisaScreen.fill_address address
   end
   
   Quando("ele escolher o local sugerido") do
+    sleep 1
     @pesquisaScreen.click_first_location
   end
   

@@ -1,0 +1,13 @@
+[caps]
+platformName = "Android"
+deviceName = "Galaxy S10"
+app = "tb://eb3f16de25afe85780fd7225"
+version = "9.0"
+appPackage = "com.move.realtor"
+appWaitActivity = "com.move.realtor.onboarding.OnBoardingActivity"
+browserName = "chrome"
+platform = "Android"
+
+[appium_lib]
+server_url = ""
+
